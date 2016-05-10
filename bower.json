@@ -1,0 +1,19 @@
+{
+  "name": "td-email-practice",
+  "homepage": "https://github.com/ZulyAlcaraz/td-email-practice",
+  "authors": [
+    "Zuly Alcaraz <zulyalcaraz@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  }
+}
