@@ -12,7 +12,7 @@ const reload = browserSync.reload;
 gulp.task('html', () => {
   return gulp.src('app/*.html')
     .pipe($.useref({searchPath: ['app', '.']}))
-    .pipe(inlineCss())
+    .pipe(inlineCss({removeStyleTags: false}))
     .pipe(gulp.dest('dist'));
 });
 
@@ -43,7 +43,7 @@ gulp.task('clean', del.bind(null, ['dist']));
 gulp.task('serve', () => {
   browserSync({
     notify: false,
-    port: 9000,
+    port: 9001,
     server: {
       baseDir: ['app']
     }
@@ -59,7 +59,7 @@ gulp.task('serve', () => {
 gulp.task('serve:dist', () => {
   browserSync({
     notify: false,
-    port: 9000,
+    port: 9001,
     server: {
       baseDir: ['dist']
     }
